@@ -13,6 +13,9 @@ public class DeathPenalty extends JavaPlugin
     @Override
     public void onEnable()
     {
+        saveDefaultConfig(); // Ensures the config file exists with default values if it's missing
+        reloadConfig();      // Reloads the configuration to ensure all values are up-to-date
+
         instance = this;
         log = getLogger();
         cm = new DPConfigManager(this, 1).initialize();
@@ -21,6 +24,7 @@ public class DeathPenalty extends JavaPlugin
 
         log.info("DeathPenalty loaded");
     }
+
 
     @Override
     public void onDisable()

@@ -6,7 +6,7 @@
 
     <groupId>vip.floatationdevice.msu</groupId>
     <artifactId>deathpenalty</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>DeathPenalty</name>
@@ -55,6 +55,10 @@
 
     <repositories>
         <repository>
+			<id>papermc</id>
+			<url>https://repo.papermc.io/repository/maven-public/</url>
+		</repository>
+		<repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
@@ -62,15 +66,19 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>local</id>
+            <url>file:///C:/Users/Jake/Documents/GitHub/MSUCore/target</url>
+        </repository>
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.13.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
+		<dependency>
+			<groupId>io.papermc.paper</groupId>
+			<artifactId>paper-api</artifactId>
+			<version>1.21.3-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
         <dependency>
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
