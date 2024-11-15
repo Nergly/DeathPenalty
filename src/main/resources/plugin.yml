@@ -4,7 +4,7 @@ description: Deduct HP, food, XP, level and money after player respawn
 authors: [ MCUmbrella ]
 website: https://github.com/MSUPlugins/DeathPenalty
 main: vip.floatationdevice.msu.deathpenalty.DeathPenalty
-api-version: 1.21
+api-version: 1.13
 depend:
   - MSUCore
 softdepend:
